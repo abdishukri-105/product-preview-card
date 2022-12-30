@@ -1,0 +1,19 @@
+{
+  "name": "product-preview-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "product-preview-card",
+    "perfumes",
+    "product-card",
+    "html",
+    "css",
+    "responsive"
+  ],
+  "author": "Abdishukri Mohamed",
+  "license": "ISC"
+}
