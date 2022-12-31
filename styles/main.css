@@ -16,31 +16,30 @@ body {
     flex-basis: 40%;
     margin-top: 5%;
     box-shadow: 5px 5px 8px #888888;
+    border-radius: 10px;
 }
 
 .card {
     display: flex;
     justify-content: space-between;
-    flex-flow: column, wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     background-color: hsl(0, 0%, 100%);
     margin: 0;
+   
 }
 
 .image{
     flex-basis: 50%;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: cover;
+    
 }
 
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4% 0px 0px 4%; 
-}
 
 .description {
     flex-basis: 45%;
-    /* margin-top: 5%; */
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -89,4 +88,32 @@ button {
     border: none;
     font-size: medium;
     color: hsl(0, 0%, 100%);
+}
+
+.cart-btn:hover {
+    background-color: hsl(160, 71%, 21%);
+}
+
+/* responsive to mobile */
+@media only screen and (max-width: 575px) {
+    .main-page {
+        flex-basis: 100%;  
+    }
+
+    .card {
+        display: flex;
+        flex-direction:column;
+
+    }
+    
+    .image{
+        background-image: url('../images/image-product-mobile.jpg');
+        background-size: cover;
+    }
+
+    .description {
+        margin-left: 5%;
+    }
+
+
 }
