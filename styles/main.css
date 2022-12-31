@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Montserrat:wght@500&family=Rubik+Vinyl&family=Unbounded:wght@300&display=swap');
 
 body {
-    
     box-sizing: border-box;
     background-color: hsl(30, 38%, 92%);
     font-family: 'Fraunces', serif; 
@@ -11,7 +10,7 @@ body {
     font-size: 16px;
 
 }
- 
+ /* the content area */
 .main-page {
     flex-basis: 40%;
     margin-top: 5%;
@@ -19,17 +18,18 @@ body {
     border-radius: 10px;
 }
 
+/* card area */
 .card {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
     width: 100%;
     background-color: hsl(0, 0%, 100%);
     margin: 0;
-   
 }
 
+/* card-image */
 .image {
     flex-basis: 50%;
 } 
@@ -40,8 +40,7 @@ body {
     object-fit: cover;
 }
 
-
-
+/* card-body */
 .description {
     flex-basis: 45%;
     background-color: hsl(0, 0%, 100%);

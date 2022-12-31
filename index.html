@@ -12,34 +12,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Kumbh+Sans&family=Montserrat:wght@500&family=Rubik+Vinyl&family=Unbounded:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="main-page">
-    <div class="card">
-        <div class="image">
-            <picture class="pictures">
-                <source media="(min-width: 1400px)" srcset="../images/image-product-desktop.jpg" class="pictures"/>
-                <source media="(max-width: 575px)" srcset="../images/image-product-mobile.jpg" class="pictures"/>
-                <img src="../images/image-product-desktop.jpg" class="pictures">
-              </picture>
-        </div>
-        <div class="description">
-            <p>Perfume</p>
-            <h2>  Gabrielle  Essence Eau De Parfum</h2>
-            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                Perfumer-Creator for the House of CHANEL.
-            </p>
-            <div class="price">
-                <h2> $149.99 </h2>
-                <p>$169.99</p>
+    <!-- the content area -->
+    <div class="main-page">
+        <!-- card-area -->
+        <div class="card">
+            <!-- card-image -->
+            <div class="image">
+                <picture class="pictures">
+                    <source media="(min-width: 1400px)" srcset="../images/image-product-desktop.jpg" class="pictures"/>
+                    <source media="(max-width: 575px)" srcset="../images/image-product-mobile.jpg" class="pictures"/>
+                    <img src="../images/image-product-desktop.jpg" class="pictures">
+                </picture>
             </div>
-            <div class="cart-btn">
-                <button> <span><img src="images/icon-cart.svg" alt="cart"></span> Add to Cart</button>
+            <!-- card-body -->
+            <div class="description">
+                <p>Perfume</p>
+                <h2>  Gabrielle  Essence Eau De Parfum</h2>
+                <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div class="price">
+                    <h2> $149.99 </h2>
+                    <p>$169.99</p>
+                </div>
+                <div class="cart-btn">
+                    <button> <span><img src="images/icon-cart.svg" alt="cart"></span> Add to Cart</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
     
-
-    <script src="src/index.js"></script>
+<script src="src/index.js"></script>
 </body>
 </html>
