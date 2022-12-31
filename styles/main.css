@@ -3,17 +3,19 @@
 body {
     
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Fraunces', serif; */
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Fraunces', serif; 
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
 
 }
  
 .main-page {
     flex-basis: 40%;
     margin-top: 5%;
+    box-shadow: 5px 5px 8px #888888;
 }
 
 .card {
@@ -21,12 +23,12 @@ body {
     justify-content: space-between;
     flex-flow: column, wrap;
     width: 100%;
-    background-color: bisque;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0;
 }
 
 .image{
     flex-basis: 50%;
-    background-color: blanchedalmond;
 }
 
 .image img {
@@ -37,6 +39,54 @@ body {
 }
 
 .description {
-    flex-basis: 40%;
-    background-color: burlywood;
+    flex-basis: 45%;
+    /* margin-top: 5%; */
+    background-color: hsl(0, 0%, 100%);
+}
+
+p:first-child {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    line-height: 1.6;
+}
+
+.price {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.price h2 {
+    margin-right: 20px;
+    color: hsl(158, 36%, 37%);
+
+}
+
+.price p {
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+.cart-btn {
+    background-color:hsl(158, 36%, 37%);
+    padding: 8px 6px;
+    border-radius: 4px;
+    margin: 0px 15px 20px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: medium;
+    color: hsl(0, 0%, 100%);
 }
